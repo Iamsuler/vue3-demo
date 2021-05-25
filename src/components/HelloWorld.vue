@@ -24,10 +24,17 @@
       Vite Docs
     </a>
     |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
+    <a
+      href="https://v3.vuejs.org/"
+      target="_blank"
+    >Vue 3 Docs</a>
   </p>
 
-  <button @click="count++">count is: {{ count }}</button>
+  <button
+    @click="count++"
+  >
+    count is: {{ count }}
+  </button>
   <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
@@ -36,6 +43,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue';
+
 export default defineComponent({
   name: 'HelloWorld',
   props: {
