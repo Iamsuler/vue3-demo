@@ -1,16 +1,16 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Dashboard from '../views/dashboard/index.vue'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import Dashboard from '../views/dashboard/index.vue';
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: Dashboard,
+    component: Dashboard
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(),
   routes
-})
+});
 
-export default router
+export default router;
