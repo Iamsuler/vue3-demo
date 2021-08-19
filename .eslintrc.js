@@ -1,46 +1,24 @@
 module.exports = {
-  root: true,
-  env: {
-    es2021: true,
-    node: true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
   },
-  extends: [
-    'plugin:vue/vue3-recommended',
-    'airbnb-base'
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
-  parserOptions: {
-    ecmaVersion: 12,
-    parser: '@typescript-eslint/parser',
-    sourceType: 'module'
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
   },
-  plugins: [
-    'vue',
-    '@typescript-eslint'
+  "plugins": [
+    "vue",
+    "@typescript-eslint"
   ],
-  settings: {
-    'import/extensions': ['.js', '.jsx', 'ts', 'tsx'],
-    'import/resolver': {
-      node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      },
-      alias: {
-        map: [
-          ['@', './src']
-        ],
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
-      }
-    }
-  },
-  rules: {
-    'comma-dangle': ['error', 'never'],
-    'import/extensions': [
-      'error',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never'
-      }
-    ]
+  "rules": {
   }
 };
