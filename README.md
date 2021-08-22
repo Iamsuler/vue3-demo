@@ -27,3 +27,4 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 5. Search and run "Select TypeScript version" -> "Use workspace version"
 
 测试git
+测试git revert
